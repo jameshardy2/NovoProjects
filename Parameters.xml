@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="AudaExplore/AudaExplore.ApiGateway" tags="IisApp">
+  </parameter>
+ 
+  <!--App keys-->
+
+  <parameter name="capacityPath" 
+             description="capacityPath"
+             defaultValue="http://localhost:57656/api/v1/DispatchServices/Capacity/GetCapacity"
+             tags="">
+    <parameterEntry kind="XmlFile" scope="\\Web\.config$" match="/configuration/appSettings/add[@key='capacityPath']/@value" />
+  </parameter>
+
+	
+  <!-- Log4net -->
+  <parameter name="log4net.Level" description="Default logging level for development" defaultValue="ALL" tags="">
+    <parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/root/level/@value" />
+  </parameter>
+
+  <parameter name="log4net.File" description="Default logging file path/name" defaultValue="AudaExplore.ApiGateway.log" tags="">
+    <parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='RollingFileAppender']/file/@value" />
+  </parameter>
+
+	<parameter name="log4net.Subject" description="Default Email subject" defaultValue="ApiGateway ERROR: ApiGateway Service" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='EmailAppender']/subject/@value" />
+	</parameter>
+
+	<parameter name="log4net.To" description="Default Email To email list" defaultValue="Saravana.Kumar@audatex.com,Bala.Prasannan@AudaExplore.com,Beth.Hardy@AudaExplore.com" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='EmailAppender']/to/@value" />
+	</parameter>
+
+	<parameter name="log4net.ConnectionString" description="Default MongoDB connection string" defaultValue="mongodb://10.66.60.192:27017/Logs" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='MongoDBAppender']/connectionString/@value" />
+	</parameter>
+
+	<parameter name="log4net.CollectionName" description="Default MongoDB collection name" defaultValue="APIGatewayLog" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='MongoDBAppender']/collectionName/@value" />
+	</parameter>
+
+	<parameter name="log4net.MongoDBAppender.Level" description="Default MongoDBAppender Logging level" defaultValue="ALL" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='MongoDBAppender']/filter/levelMin/@value" />
+	</parameter>
+
+  <parameter name="log4net.MongoDBAppenderRR.ConnectionString" description="Default MongoDB connection string" defaultValue="mongodb://10.66.60.192:27017/RequestResponseLogs" tags="">
+    <parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='MongoDBAppenderRR']/connectionString/@value" />
+  </parameter>
+
+  <parameter name="log4net.MongoDBAppenderRR.CollectionName" description="Default MongoDB collection name" defaultValue="APIGatewayLog" tags="">
+    <parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='MongoDBAppenderRR']/collectionName/@value" />
+  </parameter>
+
+  <parameter name="log4net.MongoDBAppenderRR.Level" description="Default MongoDBAppender Logging level" defaultValue="ALL" tags="">
+    <parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='MongoDBAppenderRR']/filter/levelMin/@value" />
+  </parameter>
+
+  <parameter name="log4net.LogFileAppender.Level" description="Default LogFileAppender Logging level" defaultValue="OFF" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='LogFileAppender']/filter/levelMin/@value" />
+	</parameter>
+
+	<parameter name="log4net.EmailAppender.Level" description="Default EmailAppender Logging level" defaultValue="OFF" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='EmailAppender']/filter/levelMin/@value" />
+	</parameter>
+
+	<parameter name="log4net.ConsoleAppender.Level" description="Default ConsoleAppender Logging level" defaultValue="OFF" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='ConsoleAppender']/filter/levelMin/@value" />
+	</parameter>
+
+	<parameter name="log4net.EventLogAppender.Level" description="Default EventLogAppender Logging level" defaultValue="OFF" tags="">
+		<parameterEntry kind="XmlFile" scope="log4net\.config" match="//log4net/appender[@name='EventLogAppender']/filter/levelMin/@value" />
+	</parameter>
+
+	-->
+</parameters>

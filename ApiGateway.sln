@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudaExplore.ApiGateway.Data.Models", "AudaExplore.ApiGateway.Data.Models\AudaExplore.ApiGateway.Data.Models.csproj", "{D38B210E-2705-4068-B50B-10829956296B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudaExplore.ApiGateway.Services", "AudaExplore.ApiGateway.Services\AudaExplore.ApiGateway.Services.csproj", "{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudaExplore.ApiGateway.UnitTests", "AudaExplore.ApiGateway.UnitTests\AudaExplore.ApiGateway.UnitTests.csproj", "{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudaExplore.ApiGateway.Clients", "AudaExplore.ApiGateway.Clients\AudaExplore.ApiGateway.Clients.csproj", "{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish", "Publish", "{DACC59CA-11B1-469F-83B2-A28C35B7171A}"
+	ProjectSection(SolutionItems) = preProject
+		Publish\configurePool.bat = Publish\configurePool.bat
+		Publish\Publish-Dev.cmd = Publish\Publish-Dev.cmd
+		Publish\Publish.proj = Publish\Publish.proj
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnvConfig", "EnvConfig", "{8BBE09E2-4CE6-4F65-AA81-BE705A0ADE07}"
+	ProjectSection(SolutionItems) = preProject
+		Publish\EnvConfig\Env-Dev.proj = Publish\EnvConfig\Env-Dev.proj
+		Publish\EnvConfig\Env-Pcpm.proj = Publish\EnvConfig\Env-Pcpm.proj
+		Publish\EnvConfig\Env-Prod.proj = Publish\EnvConfig\Env-Prod.proj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release 4.5.2|Any CPU = Release 4.5.2|Any CPU
+		Release 4.6.1|Any CPU = Release 4.6.1|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D38B210E-2705-4068-B50B-10829956296B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Release 4.5.2|Any CPU.ActiveCfg = Release|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Release 4.5.2|Any CPU.Build.0 = Release|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Release 4.6.1|Any CPU.ActiveCfg = Release|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Release 4.6.1|Any CPU.Build.0 = Release|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38B210E-2705-4068-B50B-10829956296B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Release 4.5.2|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Release 4.5.2|Any CPU.Build.0 = Release|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Release 4.6.1|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Release 4.6.1|Any CPU.Build.0 = Release|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA4DBB7-7CF4-4281-BFCF-115C27E3F338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Release 4.5.2|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Release 4.5.2|Any CPU.Build.0 = Release|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Release 4.6.1|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Release 4.6.1|Any CPU.Build.0 = Release|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF4B056-E3C4-4A1A-B982-903DCA9B11C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Release 4.5.2|Any CPU.ActiveCfg = Release|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Release 4.5.2|Any CPU.Build.0 = Release|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Release 4.6.1|Any CPU.ActiveCfg = Release|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Release 4.6.1|Any CPU.Build.0 = Release|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE90A775-3C8B-4892-ADA1-657AF70F7B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BBE09E2-4CE6-4F65-AA81-BE705A0ADE07} = {DACC59CA-11B1-469F-83B2-A28C35B7171A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bd-mstfs-a1:8080/tfs/audatex
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AudaExplore.ApiGateway.Clients\\AudaExplore.ApiGateway.Clients.csproj
+		SccProjectName1 = AudaExplore.ApiGateway.Clients
+		SccLocalPath1 = AudaExplore.ApiGateway.Clients
+		SccProjectUniqueName2 = AudaExplore.ApiGateway.Data.Models\\AudaExplore.ApiGateway.Data.Models.csproj
+		SccProjectName2 = AudaExplore.ApiGateway.Data.Models
+		SccLocalPath2 = AudaExplore.ApiGateway.Data.Models
+		SccProjectUniqueName3 = AudaExplore.ApiGateway.Services\\AudaExplore.ApiGateway.Services.csproj
+		SccProjectName3 = AudaExplore.ApiGateway.Services
+		SccLocalPath3 = AudaExplore.ApiGateway.Services
+		SccProjectUniqueName4 = AudaExplore.ApiGateway.UnitTests\\AudaExplore.ApiGateway.UnitTests.csproj
+		SccProjectName4 = AudaExplore.ApiGateway.UnitTests
+		SccLocalPath4 = AudaExplore.ApiGateway.UnitTests
+	EndGlobalSection
+EndGlobal
